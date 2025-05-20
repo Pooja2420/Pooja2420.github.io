@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#header"><span>Home</span></a></li>
+                    <li><a href="#about"><span>About</span></a></li>
+                    <li><a href="#albums"><span>Projects</span></a></li>
+                    <li><a href="#contact"><span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>Hi, I'm Pooja!</span></p>
+                <h1><span> I love working with data, solving problems, and using AI to create smart solutions. Here’s a peek at a few of my projects that highlight my journey.</span></h1>
+            </div>
+        </div>
+    </div>
+    <!------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Photo2.JPG" class="img1">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m Pooja Venugopal Baskaran, a data enthusiast, problem solver, and AI-driven innovator. With a passion for machine learning, deep learning, and data storytelling, I thrive on turning complex data into meaningful insights. Currently pursuing my Master’s in Data Science at DePaul University, Chicago, I bring hands-on experience in predictive modeling, AI solutions, and big data analytics. Whether it's unraveling patterns in data or building intelligent systems, I love tackling challenges that push the boundaries of innovation. Let’s turn data into impact!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event,'Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event,'Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event,'Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span> Programming Languages:</span><br> Python, R, SQL, C++</li> 
+                        <li><span> Machine Learning Libraries:</span><br> TensorFlow, PyTorch, Scikit-learn, Keras, XGBoost</li> 
+                        <li><span> Databases:</span><br>MySQL, PostgreSQL, MongoDB, NoSQ</li> 
+                        <li><span> Version Control & Deployment:</span><br> Git/GitHub, Docker, CI/CD Pipelines</li>
+                    </ul>
+                </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span> Graduate Assistant – Data Science <br>[DePaul University - College of Education, Chicago, IL (09/2024 – Present)]:</span><br>> Analyzed student perception survey data using Python & R to derive insights for strategic decision-making.
+                                <br>> Conducted data cleaning, preprocessing, and feature engineering on large datasets to enhance data quality.
+                                <br>> Developed and documented AI/ML models to improve student engagement and satisfaction analysis.
+                                <br>> Performed exploratory data analysis (EDA) and advanced statistical modeling to uncover meaningful trends.</li> 
+                            <li><span> Data Science Research Volunteer <br>[DePaul University, Chicago, IL (04/2024 – 09/2024)]:</span><br>> Improved medical imaging model accuracy by 20% through data preprocessing and hyperparameter tuning.
+                                <br>> Applied deep learning (BERT, ResNet18, Random Forest) to analyze DICOM medical image datasets.
+                                <br>> Integrated Large Language Models (LLMs) like GPT-4 and attention mechanisms for research enhancement.
+                                <br>> Utilized XGBoost and cross-validation to ensure model reliability under uncertainty conditions.</li> 
+                            <li><span> System Engineer – Finacle <br>[Infosys Limited, India (12/2021 – 08/2023)]:</span><br>> Developed and optimized financial data management systems using JavaScript & Finacle scripting.
+                                <br>> Applied K-means clustering for fraud detection and risk assessment in high-volume transactions.
+                                <br>> Designed REST API & SOAP XML integrations to ensure seamless transaction processing.
+                                <br>> Led the frontend development of financial tools using HTML, CSS, and JavaScript, improving UX.
+                                Enhanced POS & ATM functionalities, increasing transaction efficiency by 20% through SQL optimizations.</li> 
+                        
+                        </ul>
+                    </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span> Bachelor of Engineering in Electronics & Communication:</span><br>Anna University, India (08/2017 – 08/2021)
+                                    <br>GPA: 7.7 / 10
+                                    <br>Relevant Coursework: Data Structures, Algorithms, Database Management, Probability & Statistics</li> 
+                                <li><span> Master of Science in Data Science:</span><br>DePaul University, Chicago, IL (09/2023 – 06/2025)
+                                    <br>GPA: 3.7 / 4.0
+                                    <br>Relevant Coursework: Machine Learning, Deep Learning, Advanced Data Analysis, Statistical Modeling, Big Data Mining, Neural Networks</li> 
+                                
+                            </ul>
+                        </div>
+            </div>
+            
+        </div>
+    </div>
+<!---------albums---------->  
+<div id="albums">
+    <div class="container">
+       <h1 class="sub-title">Projects</h1> 
+       <div class="album-list">
+        <div>
+            <h2><span>Barcode and QR Code Recognition System</span></h2>
+            <p id="p1">Designed and implemented an image processing system capable of recognizing and decoding barcodes and QR codes under challenging conditions, including noise, skew, and scaling distortions.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2><span>Korean Drama Recommendation System</span></h2>
+            <p id="p1">Developed an advanced recommendation system for Korean dramas using a comprehensive dataset from Kaggle (2015-2023).This project bridges entertainment and technology, offering data-driven insights for content discovery.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2><span>Predicting FIFA Player Ratings Using Regression Models</span></h2>
+            <p id="p1">This portfolio project explores the application of regression models to predict FIFA player ratings by analyzing key player attributes such as dribbling, passing, shooting, and physical ability.</p>
+            <a href="#">Learn more</a>
+        </div>
+       </div>
+    </div>
+</div> 
+
+<!-- ------contact------ -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="sub-title">Contact Me</h1>
+                <a href="mailto:pooja.vb2000@gmail.com"><i class="fas fa-envelope"></i> pooja.vb2000@gmail.com</a>
+                <br><br><a href="tel:(331)-275-6444 "><i class="fas fa-phone"></i> (331)-275-6444 </a>
+                <br><br><a href="https://www.linkedin.com/in/pooja-venugopal-baskaran-92121717a/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ </div>
+
+<script>
+
+function opentab(event, tabname) {
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+    </body>
+    </html> 
