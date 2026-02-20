@@ -646,6 +646,32 @@ section { padding: 6rem 0; position: relative; z-index: 1; }
 }
 .skill-category:hover::before { opacity: 0.6; }
 
+/* Quant highlight — featured first card */
+.skill-category.quant-highlight {
+  border-color: rgba(240, 192, 64, 0.3);
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(240,192,64,0.04) 100%);
+  grid-column: 1 / -1;
+}
+.skill-category.quant-highlight::before {
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.5;
+}
+.skill-category.quant-highlight:hover {
+  border-color: rgba(240, 192, 64, 0.55);
+  transform: translateY(-3px);
+}
+.skill-category.quant-highlight h3 { color: var(--gold); }
+.skill-category.quant-highlight .skill-pills span {
+  background: rgba(240, 192, 64, 0.07);
+  border-color: rgba(240, 192, 64, 0.2);
+  color: #f5d580;
+}
+.skill-category.quant-highlight .skill-pills span:hover {
+  background: rgba(240, 192, 64, 0.15);
+  border-color: var(--gold); color: #ffe080;
+  box-shadow: 0 0 12px rgba(240,192,64,0.15);
+}
+
 .skill-category h3 {
   font-size: 0.78rem; font-weight: 600;
   margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;
